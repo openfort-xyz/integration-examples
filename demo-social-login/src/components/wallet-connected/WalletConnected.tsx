@@ -114,18 +114,18 @@ export const WalletConnected = ({
             </TableRow>
 
             <TableRow>
-              <TableCell variant="body">Test Transaction</TableCell>
+              <TableCell variant="body">Sponsored Single Transaction</TableCell>
               <TableCell>
                 {loading || scwProvider === null ? (
                   <Button disabled={loading} variant="outlined">
-                    Transaction
+                    View Transaction
                   </Button>
                 ) : (
                   <TestTransaction
                     shouldPrefund={false}
                     transactionExecutioner={paymasterTransactionSingleExecution}
                     transaction={singleTransaction}
-                    buttonLabel="Transaction"
+                    buttonLabel="View Transaction"
                     scwProvider={scwProvider}
                   />
                 )}
@@ -133,18 +133,18 @@ export const WalletConnected = ({
             </TableRow>
 
             <TableRow>
-              <TableCell variant="body">Bundle Transaction</TableCell>
+              <TableCell variant="body">Sponsored Bundled Transaction</TableCell>
               <TableCell>
                 {loading || scwProvider === null ? (
                   <Button disabled={loading} variant="outlined">
-                    Bundle Transaction
+                    View Transaction
                   </Button>
                 ) : (
                   <TestTransaction
                     shouldPrefund={false}
                     transactionExecutioner={paymasterTransactionExecution}
                     transaction={batchTransaction}
-                    buttonLabel="Bundle Transaction"
+                    buttonLabel="View Transaction"
                     scwProvider={scwProvider}
                   />
                 )}
@@ -156,7 +156,7 @@ export const WalletConnected = ({
               <TableCell variant="body">Log out</TableCell>
               <TableCell>
                 <Button variant="contained" onClick={() => disconnectWalletAndDestructSCW()}>
-                  Disconnect
+                  Log out
                 </Button>
               </TableCell>
             </TableRow>

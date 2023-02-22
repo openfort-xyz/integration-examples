@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@account-abstraction/contracts@cupcakes-3/aa-contracts":
+"@account-abstraction/contracts@cupcakes-3/aa-contracts", "@account-abstraction/contracts@github:cupcakes-3/aa-contracts":
   version "0.2.0"
   resolved "https://codeload.github.com/cupcakes-3/aa-contracts/tar.gz/3ebbdc0e82bd3d344e411de7cb31192734cdbc7a"
 
@@ -2298,10 +2298,10 @@
     "@openzeppelin/contracts" "^4.7.3"
     ethers "^5.7.0"
 
-"@openfort-sdk/scw@*":
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/@openfort-sdk/scw/-/scw-0.0.1.tgz#9bbf2fd6c50a2ce9ebb841ca691a6ab2d761f431"
-  integrity sha512-eRJ/07Ht7AovosfCBOfi8J5A9SXP0qk0Xqqr409Xw/THfthh+cCTMbODOWr6QIxL+t3xHVjjuA0k5ajxtkfdZw==
+"@openfort-sdk/scw@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@openfort-sdk/scw/-/scw-0.0.5.tgz#32436efab238a2d10be293164845824f0d9e33c5"
+  integrity sha512-Xy/SxaIHEpnZlaoDHN6yp6xDuvdQYbKQdR168Ng9NNx7ei/iwWCRLQpAJXazIFaBdQby0b7bgZl6q4zxSt7hjA==
   dependencies:
     "@account-abstraction/contracts" cupcakes-3/aa-contracts
     "@ethersproject/abstract-provider" "^5.7.0"
@@ -2329,7 +2329,7 @@
     "@openfort-sdk/common" "0.0.0"
     ethers "^5.7.0"
 
-"@openfort-sdk/web3auth@*":
+"@openfort-sdk/web3auth@0.0.*":
   version "0.0.0"
   resolved "https://registry.npmjs.org/@openfort-sdk/web3auth/-/web3auth-0.0.0.tgz#bdc1e4e0319b2b4d78bf1d90f7ecd070af69dc2d"
   integrity sha512-gHtTpBfpyNkYeRnJHco5qLc78F5NzAxzWfT4h+Ge3k6nSkTd9F0RMAY/n5CmNKFSph0AVE2Zuj24XEdzQQDF+A==

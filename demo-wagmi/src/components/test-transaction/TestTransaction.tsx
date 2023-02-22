@@ -29,12 +29,12 @@ export const singleTransaction = {
 export const batchTransaction = [
   {
     to: GREETER_ADDR,
-    value: '0001 ETH',
+    value: '0.0001 ETH',
     data: 'Function Call addGreet',
   },
   {
     to: GREETER_ADDR,
-    value: '0002 ETH',
+    value: '0.0002 ETH',
     data: 'Function Call addGreet',
   },
 ]

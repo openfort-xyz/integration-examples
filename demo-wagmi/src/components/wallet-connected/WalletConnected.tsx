@@ -115,17 +115,17 @@ export const WalletConnected = ({
             </TableRow>
 
             <TableRow>
-              <TableCell variant="body">Test Transaction</TableCell>
+              <TableCell variant="body">Single Transaction</TableCell>
               <TableCell>
                 {loading || scwProvider === null ? (
                   <Button disabled={loading} variant="outlined">
-                    Transaction
+                    View Transaction
                   </Button>
                 ) : (
                   <TestTransaction
                     transactionExecutioner={singleTransactionExecution}
                     transaction={singleTransaction}
-                    buttonLabel="Transaction"
+                    buttonLabel="View Transaction"
                     scwProvider={scwProvider}
                   />
                 )}
@@ -133,17 +133,17 @@ export const WalletConnected = ({
             </TableRow>
 
             <TableRow>
-              <TableCell variant="body">Bundle Transaction</TableCell>
+              <TableCell variant="body">Bundled Transaction</TableCell>
               <TableCell>
                 {loading || scwProvider === null ? (
                   <Button disabled={loading} variant="outlined">
-                    Bundle Transaction
+                    View Transaction
                   </Button>
                 ) : (
                   <TestTransaction
                     transactionExecutioner={bundleTransactionsExecution}
                     transaction={batchTransaction}
-                    buttonLabel="Bundle Transaction"
+                    buttonLabel="View Transaction"
                     scwProvider={scwProvider}
                   />
                 )}
@@ -151,17 +151,17 @@ export const WalletConnected = ({
             </TableRow>
 
             <TableRow>
-              <TableCell variant="body">Paymaster Transaction</TableCell>
+              <TableCell variant="body">Sponsored Single Transaction</TableCell>
               <TableCell>
                 {loading || scwProvider === null ? (
                   <Button disabled={loading} variant="outlined">
-                    Sponsored Transaction
+                    View Transaction
                   </Button>
                 ) : (
                   <TestTransaction
                     transactionExecutioner={paymasterTransactionExecution}
                     transaction={singleTransaction}
-                    buttonLabel="Sponsored Transaction"
+                    buttonLabel="View Transaction"
                     scwProvider={scwProvider}
                   />
                 )}
