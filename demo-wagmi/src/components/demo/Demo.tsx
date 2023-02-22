@@ -32,13 +32,9 @@ export const Demo = (): ReactElement => {
   return (
     <Container sx={{ pt: 6 }}>
       <Typography component="h4" variant="h4" sx={{ pb: 2 }}>
-        SCW Demo
+        Demo - WAGMI
       </Typography>
-      <Typography component="div" variant="body1" sx={{ pb: 4 }}>
-        {!isConnected
-          ? 'In this demo, we use your EOA as the owner of the SCW. Connect your wallet to get your SCW right now!'
-          : 'Details of scw created for your EOA are listed below'}
-      </Typography>
+
       {!isConnected ? <ConnectWallet /> : null}
       {isConnected ? (
         <WalletConnected scwProvider={scwProvider} disconnectWalletAndDestructSCW={disconnectWalletAndDestructSCW} />

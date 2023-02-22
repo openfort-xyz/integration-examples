@@ -46,7 +46,7 @@ export const Demo = (): ReactElement => {
   return (
     <Container sx={{ pt: 6 }}>
       <Typography component="h4" variant="h4" sx={{ pb: 2 }}>
-        SCW Demo
+        Demo - Social Login
       </Typography>
 
       <div >
